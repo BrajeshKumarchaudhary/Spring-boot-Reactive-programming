@@ -21,6 +21,7 @@ public class MonoAndFluxController {
 		return Flux.just(1, 2, 4, 56).delayElements(Duration.ofSeconds(2)).log();
 	}
 
+	@SuppressWarnings("deprecation")
 	@GetMapping(value = "/fluxInfiniteStream", produces = MediaType.APPLICATION_STREAM_JSON_VALUE)
 	public Flux<Long> returnFluxInfiniteStream() {
 		Flux<Long> longFlux = Flux.interval(Duration.ofSeconds(1)).log();

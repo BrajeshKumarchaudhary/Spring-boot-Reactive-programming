@@ -8,19 +8,15 @@
 		<version>2.4.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.reactive</groupId>
-	<artifactId>SpringBoot-ReactiveAPI</artifactId>
+	<groupId>com.app</groupId>
+	<artifactId>SpringBoot-WebClient</artifactId>
 	<version>1.0</version>
-	<name>SpringBoot-ReactiveAPI</name>
-	<description>Spring boot Reactive API</description>
+	<name>SpringBoot-WebClient</name>
+	<description>Spring boot with WebClient</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
@@ -34,11 +30,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>de.flapdoodle.embed</groupId>
-			<artifactId>de.flapdoodle.embed.mongo</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
